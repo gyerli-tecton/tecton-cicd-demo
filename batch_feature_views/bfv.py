@@ -9,8 +9,8 @@ from tecton import (
 
 from datetime import datetime, timedelta
 
-from entity import user
-from ds import txn_batch
+from entities.entity import user
+from data_sources.ds import txn_batch
 
 @batch_feature_view(
     name="user_txns_time_window",
